@@ -54,6 +54,7 @@ table {
 */
 
 body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 1.125em; /* 18px/16px = 1.125 */
   line-height: 1.4400000000000002em; /* 25.92px / 18px */
   padding-top: 1.4400000000000002em; /* 25.92px / 18px */
@@ -71,8 +72,22 @@ h2 {
 img {
   display: block;
   max-width: 100%;
+  padding-bottom: 1.4400000000000002em; /* 25.92px / 18px */
 }
 
-
-
+@media screen and (min-width: 33.333333333333336em) {
+  figure {
+    position: relative;
+  }
+  img {
+     margin-left: 45.454545454545%;
+     width: 54.545454545454%;
+  }
+  figcaption {
+    position: absolute;
+    width: 45.454545454545%;
+    top: 0;
+    left: 0;
+  }
+}
 
