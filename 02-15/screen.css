@@ -70,24 +70,27 @@ h2 {
 }
 
 img {
-  display: block;
-  max-width: 100%;
+  display: block; /* Images display inline by default */
+  max-width: 100%; /* Responsive images! Always be at most 100%
+                      the width of the containing element
+                      (<figure>, in this example's case) */
   padding-bottom: 1.4400000000000002em; /* 25.92px / 18px */
 }
 
 @media screen and (min-width: 33.333333333333336em) {
   figure {
-    position: relative;
+    position: relative; /* Give figure a positioning context
+                           to set up the position of figcaption below...*/
   }
   img {
-     margin-left: 45.454545454545%;
-     width: 54.545454545454%;
+     margin-left: 45.454545454545%; /* Push img out of figcaptions's way */
+     width: 54.545454545454%; /* Make the image 6/11's of the page */
   }
   figcaption {
-    position: absolute;
-    width: 45.454545454545%;
-    top: 0;
-    left: 0;
+    position: absolute; /* Position figcaption absolutely, -relative- to figure, above */
+    width: 45.454545454545%; /* Make the figcaption 5/11's of the page */
+    top: 0; /* Put figcaption at the very top... */
+    left: 0; /* ...and very left of figure */
   }
 }
 
