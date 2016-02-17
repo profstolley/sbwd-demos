@@ -79,7 +79,7 @@ img {
   figure {
     position: relative;
   }
-  img {
+  .image {
      margin-left: 45.454545454545%;
      width: 54.545454545454%;
   }
@@ -94,11 +94,9 @@ img {
     display: flex;
     flex-direction: row-reverse;
   }
-  .flexbox img {
-    width: 100%; /* Crucial. On some browsers (like Safari),
-                    flexbox will distort the aspect ratio on
-                    images; max-width: 100% isn't enough. */
+  .flexbox .image {
     margin-left: 0;
+    width: auto;
     flex: 0 1 54.545454545454%;
   }
   .flexbox figcaption {
