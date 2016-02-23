@@ -1,0 +1,96 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom site styles */
+/*
+  Using Minor Third Modular Scale:
+  http://www.modularscale.com/?18&px&1.2&web&text
+*/
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.125em; /* 18px/16px = 1.125 */
+  line-height: 1.4400000000000002em; /* 25.92px / 18px */
+  padding-top: 1.4400000000000002em; /* 25.92px / 18px */
+  padding-left: 1.200em; /* 5:6 ratio on baseline */
+  padding-right: 0.600em; /* half the 5:6 ratio */
+}
+
+h2 {
+  font-size: 1.728em; /* 31.104px / 18px */
+  line-height: 1.6666666666666667em; /* 25.92 * 2 / 31.104 */
+  padding-top: 0.8333333333333334em; /* 25.92px / 31.104 */
+  padding-bottom: 1.6666666666666667em; /* 25.92 * 2 / 31.104 */
+}
+
+img {
+  display: block; /* Images display inline by default */
+  max-width: 100%; /* Responsive images! Always be at most 100%
+                      the width of the containing element
+                      (<figure>, in this example's case) */
+  padding-bottom: 1.4400000000000002em; /* 25.92px / 18px */
+}
+
+@media screen and (min-width: 33.333333333333336em) {
+  figure {
+    position: relative; /* Give figure a positioning context
+                           to set up the position of figcaption below...*/
+  }
+  img {
+     margin-left: 45.454545454545%; /* Push img out of figcaptions's way */
+     width: 54.545454545454%; /* Make the image 6/11's of the page */
+  }
+  figcaption {
+    position: absolute; /* Position figcaption absolutely, -relative- to figure, above */
+    width: 45.454545454545%; /* Make the figcaption 5/11's of the page */
+    top: 0; /* Put figcaption at the very top... */
+    left: 0; /* ...and very left of figure */
+  }
+}
+
