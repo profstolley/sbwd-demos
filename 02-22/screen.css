@@ -83,7 +83,7 @@ img {
                            to set up the position of figcaption
                            below...*/
   }
-  img {
+  .images {
      margin-left: 45.454545454545%; /* Push img out of figcaptions's way */
      width: 54.545454545454%; /* Make the image 6/11's of the page */
   }
@@ -100,7 +100,7 @@ img {
     position: static;
     display: flex;
   }
-  .flexbox img {
+  .flexbox .images {
     margin-left: 0;
     width: auto;
     flex-basis: 54.545454545454%;
