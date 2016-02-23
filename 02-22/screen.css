@@ -80,7 +80,8 @@ img {
 @media screen and (min-width: 33.333333333333336em) {
   figure {
     position: relative; /* Give figure a positioning context
-                           to set up the position of figcaption below...*/
+                           to set up the position of figcaption
+                           below...*/
   }
   img {
      margin-left: 45.454545454545%; /* Push img out of figcaptions's way */
@@ -92,5 +93,20 @@ img {
     top: 0; /* Put figcaption at the very top... */
     left: 0; /* ...and very left of figure */
   }
+
+  /* Flexbox-enabled styles below */
+
+  .flexbox figure {
+    position: static;
+  }
+  .flexbox img {
+    margin-left: 0;
+    width: auto;
+  }
+  .flexbox figcaption {
+    position: static;
+    width: auto;
+  }
+
 }
 
