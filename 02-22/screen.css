@@ -98,14 +98,17 @@ img {
 
   .flexbox figure {
     position: static;
+    display: flex;
   }
   .flexbox img {
     margin-left: 0;
     width: auto;
+    flex-basis: 54.545454545454%;
   }
   .flexbox figcaption {
     position: static;
     width: auto;
+    flex-basis: 45.454545454545%;
   }
 
 }
