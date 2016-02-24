@@ -89,6 +89,9 @@ img {
     top: 0;
     left: 0;
   }
+  .flexbox body {
+    border-top: 2em solid red;
+  }
   .flexbox figure {
     position: static;
     display: flex;
@@ -97,6 +100,7 @@ img {
   .flexbox .image {
     margin-left: 0;
     width: auto;
+    max-width: 54.545454545454%;
     flex: 0 1 54.545454545454%;
   }
   .flexbox figcaption {
