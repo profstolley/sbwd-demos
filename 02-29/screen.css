@@ -49,6 +49,11 @@ table {
 
 /* Custom Site Styles */
 
+video {
+  display: block;
+  max-width: 100%;
+}
+
 
 html {
   padding: .625em; /* 10px @ 16px */
