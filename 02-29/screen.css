@@ -52,7 +52,17 @@ table {
 video {
   display: block;
   max-width: 100%;
+  margin: 0 auto;
 }
+
+.video {
+  background-color: #222;
+}
+.video figcaption {
+  color: #EEE;
+  padding: 1em;
+}
+
 
 
 html {
