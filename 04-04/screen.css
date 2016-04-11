@@ -1,5 +1,13 @@
 
 /* Base */
+abbr[title] {
+  background: yellow;
+  cursor: help;
+}
+abbr {
+  background: white;
+  transition: background 2s;
+}
 
 /* Layout */
 
@@ -8,3 +16,5 @@
 /* State */
 
 .nojs h1 { color: red; }
+
+.js h1 { color: blue; }
