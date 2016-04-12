@@ -1,0 +1,33 @@
+html {
+  font-family: Oranda, Palatino, "Times New Roman", serif;
+  color: blue;
+  font-size: 1.375em;
+}
+
+.dark {
+  color: #cccccc;
+}
+
+#header {
+  background-color: #FF0;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  border-radius: 5%;
+}
+
+#header h1 {
+  color: #00F;
+}
+
+a {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: green;
+}
