@@ -1,0 +1,47 @@
+$primaryColor: #FF0;
+$secondaryColor: #00F;
+$serifStack: Oranda, Palatino, "Times New Roman", serif;
+$sansStack: Helvetica, Arial, sans-serif;
+
+$fontStack: $serifStack;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin em-font-size($target,$context) {
+  font-size: $target/$context * 1em;
+}
+
+
+html {
+  font-family: $fontStack;
+  color: blue;
+  @include em-font-size(22px,16px);
+}
+
+.dark { color: darken(#FFF, 20%); }
+
+#header {
+  background-color: $primaryColor;
+  @include border-radius(5%);
+  h1 {
+    color: $secondaryColor;
+  }
+}
+
+a {
+  color: blue;
+  &:visited {
+    color: purple;
+  }
+  &:hover {
+    color: green;
+  }
+}
+
+
+
