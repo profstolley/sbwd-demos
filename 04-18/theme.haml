@@ -1,0 +1,19 @@
+%html
+  %head
+    %title {Title}
+  %body
+    %header#header
+      %h1
+        %a{href: "{BlogURL}"} {Title}
+      %p {Description} Read this site via 
+        %a{href: "{RSS}"} RSS
+      .main
+        {block:Posts}
+        {block:Text}
+        %article
+          %header
+            %h2 {Title}
+          .content {Body}
+        {/block:Text}
+        {/block:Posts}
+     

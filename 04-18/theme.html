@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>{Title}</title>
+  </head>
+  <body>
+    <header id='header'>
+      <h1>
+        <a href='{BlogURL}'>{Title}</a>
+      </h1>
+      <p>{Description} Read this site via 
+        <a href='{RSS}'>RSS</a>
+      </p>
+      <div class='main'>
+        {block:Posts}
+        {block:Text}
+        <article>
+          <header>
+            <h2>{Title}</h2>
+          </header>
+          <div class='content'>{Body}</div>
+        </article>
+        {/block:Text}
+        {/block:Posts}
+      </div>
+    </header>
+  </body>
+</html>
