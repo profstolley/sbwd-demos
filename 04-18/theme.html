@@ -15,9 +15,19 @@
         {block:Text}
         <article>
           <header>
-            <h2>{Title}</h2>
+            <h2>
+              {block:IndexPage}
+              <a href='{Permalink}'>{Title}</a>
+              {/block:IndexPage}
+              {block:PermalinkPage}
+              {Title}
+              {/block:PermalinkPage}
+            </h2>
           </header>
           <div class='content'>{Body}</div>
+          <footer>
+            <p>Posted at {12Hour}:{Minutes}{AmPm} {Month} {DayOfMonth}, {Year}</p>
+          </footer>
         </article>
         {/block:Text}
         {/block:Posts}

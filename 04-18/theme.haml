@@ -12,8 +12,16 @@
         {block:Text}
         %article
           %header
-            %h2 {Title}
+            %h2 
+              {block:IndexPage}
+              %a{href: "{Permalink}"} {Title}
+              {/block:IndexPage}
+              {block:PermalinkPage}
+              {Title}
+              {/block:PermalinkPage}
           .content {Body}
+          %footer
+            %p Posted at {12Hour}:{Minutes}{AmPm} {Month} {DayOfMonth}, {Year}
         {/block:Text}
         {/block:Posts}
      
