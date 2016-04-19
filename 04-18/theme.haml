@@ -1,6 +1,7 @@
 %html
   %head
     %title {Title}
+    %link{rel: "stylesheet", href: "http://example.com/css/screen.css"}
   %body
     %header#header
       %h1
@@ -10,7 +11,7 @@
       .main
         {block:Posts}
         {block:Text}
-        %article
+        %article.text
           %header
             %h2 
               {block:IndexPage}
@@ -23,5 +24,11 @@
           %footer
             %p Posted at {12Hour}:{Minutes}{AmPm} {Month} {DayOfMonth}, {Year}
         {/block:Text}
+        {block:Photo}
+        %article.photo
+          %figure{aria-labelledby: "photo{PostID}"}
+            %img{src: "{PhotoURL-HighRes}", alt: "{PhotoAlt}"}
+            %figcaption{id: "photo{PostID}"} {Caption}
+        {/block:Photo}
         {/block:Posts}
      

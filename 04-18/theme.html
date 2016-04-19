@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>{Title}</title>
+    <link rel='stylesheet' href='http://example.com/css/screen.css' />
   </head>
   <body>
     <header id='header'>
@@ -13,7 +14,7 @@
       <div class='main'>
         {block:Posts}
         {block:Text}
-        <article>
+        <article class='text'>
           <header>
             <h2>
               {block:IndexPage}
@@ -30,6 +31,14 @@
           </footer>
         </article>
         {/block:Text}
+        {block:Photo}
+        <article class='photo'>
+          <figure aria-labelledby='photo{PostID}'>
+            <img src='{PhotoURL-HighRes}' alt='{PhotoAlt}' />
+            <figcaption id='photo{PostID}'>{Caption}</figcaption>
+          </figure>
+        </article>
+        {/block:Photo}
         {/block:Posts}
       </div>
     </header>
